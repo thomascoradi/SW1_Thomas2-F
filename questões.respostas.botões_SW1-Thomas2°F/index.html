@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <script src="alert.js"></script>
+
+</head>
+<body>
+       
+        <h1>Questionário</h1>
+            <h2>1-Qual é a capital do Brasil?</h2>
+            <button id="button" onclick="showRespost()">Brasília</button>
+            <button id="button" onclick="showIncorrect()">Berlim</button>
+            <button id="button" onclick="showIncorrect()">Buenos Aires</button>
+            <button id="button" onclick="showIncorrect()">Nicarágua</button>
+
+            <h2>2-Quem descobriu o Brasil?</h2>
+            <button id="button" onclick="showRespost()">Pedro Álvares Cabral</button>
+            <button id="button" onclick="showIncorrect()">Dom Pedro II</button>
+            <button id="button" onclick="showIncorrect()">Getúlio Vargas</button>
+            <button id="button" onclick="showIncorrect()">Dilma</button>
+            
+            <h2>3-Qual é a raiz quadrada de 25?</h2>
+            <button id="button" onclick="showIncorrect()">12</button>
+            <button id="button" onclick="showRespost()">5</button>
+            <button id="button" onclick="showIncorrect()">x</button>
+            <button id="button" onclick="showIncorrect()">Não sei.</button>
+            
+            <h2>4-Qual é a melhor comida do mundo?</h2>
+            <button id="button" onclick="showIncorrect()">Chocolate Belga</button>
+            <button id="button" onclick="showIncorrect()">Bolo Gourme</button>
+            <button id="button" onclick="showRespost()">Arroz com feijão</button>
+            <button id="button" onclick="showQuase()">Picanha</button>
+
+            <h2>5-Verifique se os números abaixo são ímpar ou par:</h2>
+            <button id="button" value="4" onclick="showImpar(4)">4</button>
+            <button id="button" value="5" onclick="showImpar(5)">5</button>
+
+    <script>
+        function showRespost(texto) {
+            alert("Correto!");
+            }
+        
+        function showIncorrect(texto) {
+            alert("Incorreto...")
+        }
+        function showQuase(texto) {
+            alert("Chegou perto... mas Incorreto.")
+        }
+        
+        function showImpar(numero) { 
+        if (numero % 2 === 0) {
+        alert(numero + " é um número par.");
+        } else {
+        alert(numero + " é um número ímpar.");
+        }
+        }
+    </script>
+
+</body>
+</html>
