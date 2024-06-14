@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="alert.js"></script>
+    <style>
+        .calculadora {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="display" disabled><br>
+        <div class="row">
+            <input type="button" value="7" onclick="showNumero('7')">
+            <input type="button" value="8" onclick="showNumero('8')">
+            <input type="button" value="9" onclick="showNumero('9')">
+            <input type="button" value="/" onclick="showNumero('/')">
+        </div>
+        <div class="row">
+            <input type="button" value="4" onclick="showNumero('4')">
+            <input type="button" value="5" onclick="showNumero('5')">
+            <input type="button" value="6" onclick="showNumero('6')">
+            <input type="button" value="*" onclick="showNumero('*')">
+        </div>
+        <div class="row">
+            <input type="button" value="1" onclick="showNumero('1')">
+            <input type="button" value="2" onclick="showNumero('2')">
+            <input type="button" value="3" onclick="showNumero('3')">
+            <input type="button" value="-" onclick="showNumero('-')">
+        </div>
+        <div class="row">
+            <input type="button" value="0" onclick="showNumero('0')">
+            <input type="button" value="." onclick="showNumero('.')">
+            <input type="button" value="=" onclick="showNumero()">
+            <input type="button" value="+" onclick="showNumero('+')">
+        </div>
+        <div class="row">
+            <input type="button" value="C" onclick="clearDisplay()">
+            <input type="button" value="CE" onclick="clearEntry()">
+            <input type="button" value="%" onclick="showNumero('%')">
+            <input type="button" value="←" onclick="backspace()">
+        </div>
+    </div>
+
+    <script>
+        function showNumero(numero) {
+            alert(numero);
+        }
+    </script>
+</body>
+</html>
