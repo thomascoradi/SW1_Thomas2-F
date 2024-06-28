@@ -1,0 +1,36 @@
+#divCalculadora{
+    width: 300px;
+  background-color: rgb(124, 22, 172);
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+#row{
+    margin-top: 600px;
+    margin-left: 500px;
+}
+
+body {
+    background-color: rgb(124, 22, 172);
+}
+
+.button {
+    display: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  font-size: 1.5em;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e6e6e6;
+  cursor: pointer;
+  width: 30px;
+  padding: 20px 30px;  
+}
+
+.visor {
+
+}

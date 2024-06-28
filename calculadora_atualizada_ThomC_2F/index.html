@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="divCalculadora" class="calculadora">
+        <input type="text" id="visor" class="viso"><br>
+        <div class="row">
+            <input type="button" class = "btn btn-primary btn-sm" value="7" onclick="botao(7)">
+            <input type="button" class = "btn btn-primary btn-sm" value="8" onclick="botao(8)">
+            <input type="button" class = "btn btn-primary btn-sm" value="9" onclick="botao(9)">
+            <input type="button" class = "btn btn-primary btn-sm" value="/" onclick="botao('/')">
+        </div>
+        <div class="row">
+            <input type="button" class = "btn btn-primary btn-sm" value="4" onclick="botao(4)">
+            <input type="button" class = "btn btn-primary btn-sm" value="5" onclick="botao(5)">
+            <input type="button" class = "btn btn-primary btn-sm" value="6" onclick="botao(6)">
+            <input type="button" class = "btn btn-primary btn-sm" value="*" onclick="botao('*')">
+        </div>
+        <div class="row">
+            <input type="button" class = "btn btn-primary btn-sm" value="1" onclick="botao(1)">
+            <input type="button" class = "btn btn-primary btn-sm" value="2" onclick="botao(2)">
+            <input type="button" class = "btn btn-primary btn-sm" value="3" onclick="botao(3)">
+            <input type="button" class = "btn btn-primary btn-sm" value="-" onclick="botao('-')">
+        </div>
+        <div class="row">
+            <input type="button" class = "btn btn-primary btn-sm" value="0" onclick="botao(0)">
+            <input type="button" class = "btn btn-primary btn-sm" value="." onclick="botao('.')">
+            <input type="button" class = "btn btn-primary btn-sm" value="=" onclick="botao('total')">
+            <input type="button" class = "btn btn-primary btn-sm" value="+" onclick="botao('+')">
+        </div>
+        <div class="row">
+            <input type="button" class = "btn btn-primary btn-sm" value="C" onclick="botao('C')">
+            <input type="button" class = "btn btn-primary btn-sm" value="CE" onclick="botao('CE')">
+            <input type="button" class = "btn btn-primary btn-sm" value="%" onclick="botao('%')">
+            <input type="button" class = "btn btn-primary btn-sm" value="←" onclick="botao()">
+        </div>
+    </div>
+</body>
+</html>
