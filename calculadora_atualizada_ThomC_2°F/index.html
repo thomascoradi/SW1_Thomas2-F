@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="visor" class="calculadora">
+        <input type="text" id="visor" class="visor"><br>
+        <div class="row">
+            <input type="button" value="7" onclick="botao(7)">
+            <input type="button" value="8" onclick="botao(8)">
+            <input type="button" value="9" onclick="botao(9)">
+            <input type="button" value="/" onclick="botao('/')">
+        </div>
+        <div class="row">
+            <input type="button" value="4" onclick="botao(4)">
+            <input type="button" value="5" onclick="botao(5)">
+            <input type="button" value="6" onclick="botao(6)">
+            <input type="button" value="*" onclick="botao('*')">
+        </div>
+        <div class="row">
+            <input type="button" value="1" onclick="botao(1)">
+            <input type="button" value="2" onclick="botao(2)">
+            <input type="button" value="3" onclick="botao(3)">
+            <input type="button" value="-" onclick="botao('-')">
+        </div>
+        <div class="row">
+            <input type="button" value="0" onclick="botao(0)">
+            <input type="button" value="." onclick="botao('.')">
+            <input type="button" value="=" onclick="botao('total')">
+            <input type="button" value="+" onclick="botao('+')">
+        </div>
+        <div class="row">
+            <input type="button" value="C" onclick="botao('C')">
+            <input type="button" value="CE" onclick="botao('CE')">
+            <input type="button" value="%" onclick="botao('%')">
+            <input type="button" value="←" onclick="botao()">
+        </div>
+    </div>
+</body>
+</html>
